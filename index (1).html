@@ -1,0 +1,2523 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <!-- ========== META TAGS & TITLE ========== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hussain Engineering Consultants | Complete Civil Engineering Solutions</title>
+    <meta name="description" content="Professional civil engineering consultancy with advanced calculators, project management, and complete engineering solutions">
+    <meta name="keywords" content="civil engineering, structural design, architecture, construction, engineering consultancy, planning, surveying, estimates">
+    
+    <!-- ========== SCHEMA MARKUP ========== -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EngineeringService",
+        "name": "Hussain Engineering Consultants",
+        "description": "Professional civil engineering consultancy services",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Mula BaBa Ground Floor, Puran Engineering Students Hostel, Mingora Bypass Road",
+            "addressLocality": "Mingora",
+            "addressRegion": "Swat",
+            "addressCountry": "Pakistan"
+        },
+        "telephone": "+923449752025",
+        "openingHours": "Mo-Sa 09:00-18:00",
+        "url": "https://hussainengineering.com",
+        "employee": [
+            {
+                "@type": "Person",
+                "name": "Engr. Hayat Hussain",
+                "jobTitle": "Managing Director",
+                "hasCredential": "MS Civil Engineering, UET Peshawar"
+            },
+            {
+                "@type": "Person",
+                "name": "Engr. Zia Ur Rahman",
+                "jobTitle": "Assistant Director"
+            },
+            {
+                "@type": "Person",
+                "name": "Architect Asim Khan",
+                "jobTitle": "Lead Architect"
+            }
+        ]
+    }
+    </script>
+    
+    <!-- ========== FONTS & ICONS ========== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- ========== PRELOAD CRITICAL ASSETS ========== -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Roboto+Mono:wght@400;500;600&display=swap" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    
+    <style>
+        /* ========== CSS VARIABLES & THEME SYSTEM ========== */
+        :root {
+            --primary-color: #0066CC;
+            --primary-dark: #0052A3;
+            --secondary-color: #00A8E8;
+            --accent-color: #FF6B35;
+            --success-color: #28A745;
+            --warning-color: #FFC107;
+            --danger-color: #DC3545;
+            --info-color: #17A2B8;
+            --dark-color: #1A1F2C;
+            --light-color: #F8F9FA;
+            --gray-100: #F8F9FA;
+            --gray-200: #E9ECEF;
+            --gray-300: #DEE2E6;
+            --gray-400: #CED4DA;
+            --gray-500: #ADB5BD;
+            --gray-600: #6C757D;
+            --gray-700: #495057;
+            --gray-800: #343A40;
+            --gray-900: #212529;
+            
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 25px rgba(0,0,0,0.15);
+            --shadow-xl: 0 20px 50px rgba(0,0,0,0.2);
+            
+            --border-radius: 8px;
+            --border-radius-lg: 12px;
+            --border-radius-xl: 20px;
+            
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.2);
+        }
+
+        [data-theme="dark"] {
+            --primary-color: #4DA6FF;
+            --primary-dark: #1E88E5;
+            --secondary-color: #66D9FF;
+            --accent-color: #FF8C5A;
+            --dark-color: #F8F9FA;
+            --light-color: #121826;
+            --gray-100: #1A1F2C;
+            --gray-200: #2D3748;
+            --gray-300: #4A5568;
+            --gray-400: #718096;
+            --gray-500: #A0AEC0;
+            --gray-600: #CBD5E0;
+            --gray-700: #E2E8F0;
+            --gray-800: #EDF2F7;
+            --gray-900: #F7FAFC;
+            --glass-bg: rgba(18, 24, 38, 0.7);
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+
+        /* ========== BASE STYLES & RESET ========== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            line-height: 1.6;
+            transition: var(--transition);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        button, input, textarea, select {
+            font-family: inherit;
+            font-size: inherit;
+            outline: none;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--gray-600);
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin: 0 auto 3rem;
+        }
+
+        /* ========== UTILITY CLASSES ========== */
+        .glass {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--border-radius-lg);
+        }
+
+        .card {
+            background: var(--light-color);
+            border-radius: var(--border-radius-lg);
+            padding: 2rem;
+            box-shadow: var(--shadow-lg);
+            transition: var(--transition);
+            border: 1px solid var(--gray-200);
+        }
+
+        [data-theme="dark"] .card {
+            background: var(--gray-100);
+            border-color: var(--gray-200);
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            transition: var(--transition);
+            border: 2px solid transparent;
+            white-space: nowrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .text-center { text-align: center; }
+        .text-gradient { background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .mb-1 { margin-bottom: 1rem; }
+        .mb-2 { margin-bottom: 2rem; }
+        .mb-3 { margin-bottom: 3rem; }
+        .mt-1 { margin-top: 1rem; }
+        .mt-2 { margin-top: 2rem; }
+        .mt-3 { margin-top: 3rem; }
+        .w-full { width: 100%; }
+        .d-flex { display: flex; }
+        .align-center { align-items: center; }
+        .justify-between { justify-content: space-between; }
+        .flex-wrap { flex-wrap: wrap; }
+
+        /* ========== NAVIGATION ========== */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+
+        [data-theme="dark"] .navbar {
+            background: rgba(26, 31, 44, 0.95);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-icon {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+
+        .logo-text h1 {
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-link {
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-color);
+        }
+
+        .nav-link.active {
+            color: var(--primary-color);
+        }
+
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 30px;
+            height: 3px;
+            background: var(--primary-color);
+            border-radius: 2px;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .theme-toggle, .mobile-toggle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gray-200);
+            border: none;
+            color: var(--dark-color);
+            transition: var(--transition);
+        }
+
+        .theme-toggle:hover, .mobile-toggle:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .mobile-toggle {
+            display: none;
+        }
+
+        /* ========== HERO SECTION ========== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+                        url('https://images.unsplash.com/photo-1503387769-00a112127ca0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            padding-top: 80px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: var(--accent-color);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(to right, #fff, var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: var(--border-radius);
+            backdrop-filter: blur(10px);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--accent-color);
+            display: block;
+        }
+
+        /* ========== TEAM SECTION ========== */
+        .team-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        [data-theme="dark"] .team-section {
+            background: linear-gradient(135deg, #1a1f2c 0%, #2d3748 100%);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .team-card {
+            background: var(--light-color);
+            border-radius: var(--border-radius-lg);
+            padding: 2rem;
+            box-shadow: var(--shadow-lg);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .team-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .team-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: white;
+        }
+
+        .team-title {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        /* ========== SERVICES SECTION ========== */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--light-color);
+            border-radius: var(--border-radius-lg);
+            padding: 2rem;
+            box-shadow: var(--shadow-lg);
+            transition: var(--transition);
+            text-align: center;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        /* ========== CALCULATORS SECTION ========== */
+        .calculators {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+        }
+
+        .calculator-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            padding: 1rem 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            color: white;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: var(--transition);
+            backdrop-filter: blur(10px);
+        }
+
+        .tab-btn.active {
+            background: white;
+            color: var(--primary-color);
+        }
+
+        .calculator-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .calculator-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border-radius: var(--border-radius-lg);
+            padding: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .calculator-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .calculator-icon {
+            font-size: 2rem;
+            color: var(--accent-color);
+        }
+
+        .input-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .input-group input,
+        .input-group select {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: none;
+            border-radius: var(--border-radius);
+            background: rgba(255, 255, 255, 0.9);
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .input-group input:focus,
+        .input-group select:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+        }
+
+        .result-box {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: var(--border-radius);
+            display: none;
+        }
+
+        .result-box.show {
+            display: block;
+            animation: slideIn 0.5s ease;
+        }
+
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* ========== PROJECTS SECTION ========== */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: var(--light-color);
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            transition: var(--transition);
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .project-image {
+            height: 200px;
+            background: var(--gray-300);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .project-card:hover .project-image img {
+            transform: scale(1.1);
+        }
+
+        .project-status {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            padding: 0.5rem 1rem;
+            background: var(--success-color);
+            color: white;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+
+        .project-status.pending {
+            background: var(--warning-color);
+        }
+
+        .project-status.delayed {
+            background: var(--danger-color);
+        }
+
+        /* ========== CONTACT SECTION ========== */
+        .contact-section {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+        }
+
+        .contact-info {
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: var(--border-radius-lg);
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            flex-shrink: 0;
+        }
+
+        #map {
+            height: 400px;
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* ========== WHATSAPP BUTTON ========== */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: var(--shadow-lg);
+            z-index: 999;
+            transition: var(--transition);
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.5);
+        }
+
+        /* ========== FOOTER ========== */
+        footer {
+            background: var(--dark-color);
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--gray-500);
+        }
+
+        /* ========== ANIMATIONS ========== */
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* ========== LOADING ANIMATION ========== */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: var(--primary-color);
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* ========== RESPONSIVE DESIGN ========== */
+        @media (max-width: 1024px) {
+            .section-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-title {
+                font-size: 3rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: fixed;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: var(--light-color);
+                padding: 2rem;
+                box-shadow: var(--shadow-lg);
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .mobile-toggle {
+                display: flex;
+            }
+            
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .calculator-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-title {
+                font-size: 1.75rem;
+            }
+            
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .hero-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .tab-btn {
+                padding: 0.75rem 1.5rem;
+                font-size: 0.875rem;
+            }
+        }
+
+        /* ========== ACCESSIBILITY ========== */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        :focus-visible {
+            outline: 3px solid var(--accent-color);
+            outline-offset: 3px;
+        }
+
+        /* ========== PRINT STYLES ========== */
+        @media print {
+            .navbar,
+            .whatsapp-float,
+            .mobile-toggle,
+            .theme-toggle,
+            button:not(.btn-print) {
+                display: none !important;
+            }
+            
+            body {
+                background: white !important;
+                color: black !important;
+            }
+            
+            .section-title {
+                -webkit-text-fill-color: black !important;
+                background: none !important;
+            }
+            
+            .hero {
+                background: white !important;
+                color: black !important;
+                min-height: auto;
+            }
+            
+            .hero-title {
+                -webkit-text-fill-color: black !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ========== WHATSAPP FLOATING BUTTON ========== -->
+    <a href="https://wa.me/923449752025?text=Hello%20Hussain%20Engineering%20Consultants" 
+       class="whatsapp-float" 
+       target="_blank"
+       aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fas fa-drafting-compass logo-icon"></i>
+                <div class="logo-text">
+                    <h1>Hussain Engineering Consultants</h1>
+                    <small style="color: var(--gray-600);">PEC Registered Since 2008</small>
+                </div>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#team" class="nav-link">Our Team</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#calculators" class="nav-link">Calculators</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge">Established 2008</span>
+                <h1 class="hero-title">Hussain Engineering Consultants</h1>
+                <p class="hero-subtitle">
+                    Complete Civil Engineering Solutions: Planning, Architecture Design, Estimates, Surveying, 
+                    Landscape Design, Construction Supervision, Water Services & Structural Design.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="180">0</span>
+                        <span>Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="65">0</span>
+                        <span>Happy Clients</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="16">0</span>
+                        <span>Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="120">0</span>
+                        <span>Designs Approved</span>
+                    </div>
+                </div>
+                
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-calendar-check"></i> Get Free Consultation
+                    </a>
+                    <a href="#calculators" class="btn btn-outline" style="color: white; border-color: white;">
+                        <i class="fas fa-calculator"></i> Try Calculators
+                    </a>
+                    <a href="tel:+923449752025" class="btn" style="background: rgba(255,255,255,0.1); color: white; border-color: white;">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TEAM SECTION ========== -->
+    <section class="team-section" id="team">
+        <div class="container">
+            <h2 class="section-title">Our Professional Team</h2>
+            <p class="section-subtitle">Meet our experienced team of engineering professionals</p>
+            
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-img">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Engr. Hayat Hussain</h3>
+                    <p class="team-title">Managing Director</p>
+                    <p>MS Civil Engineering, UET Peshawar</p>
+                    <p style="color: var(--gray-600); margin-top: 1rem;">15+ years experience in structural design and project management</p>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-img">
+                        <i class="fas fa-user-cog"></i>
+                    </div>
+                    <h3>Engr. Zia Ur Rahman</h3>
+                    <p class="team-title">Assistant Director</p>
+                    <p>BS Civil Engineering</p>
+                    <p style="color: var(--gray-600); margin-top: 1rem;">Specialized in construction supervision and quality control</p>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-img">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3>Architect Asim Khan</h3>
+                    <p class="team-title">Lead Architect</p>
+                    <p>B.Arch, NCA Lahore</p>
+                    <p style="color: var(--gray-600); margin-top: 1rem;">Expert in modern architectural design and 3D visualization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SERVICES SECTION ========== -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Our Comprehensive Services</h2>
+            <p class="section-subtitle">Complete engineering solutions for all your construction needs</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-project-diagram service-icon"></i>
+                    <h3>Planning</h3>
+                    <p>Comprehensive project planning and feasibility studies for residential, commercial, and industrial projects.</p>
+                    <ul style="text-align: left; margin-top: 1rem; list-style: none;">
+                        <li><i class="fas fa-check" style="color: var(--success-color);"></i> Master Planning</li>
+                        <li><i class="fas fa-check" style="color: var(--success-color);"></i> Site Analysis</li>
+                        <li><i class="fas fa-check" style="color: var(--success-color);"></i> Feasibility Studies</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-archway service-icon"></i>
+                    <h3>Architecture Designing</h3>
+                    <p>Creative architectural design with 3D visualization and sustainable building solutions.</p>
+                    <ul style="text-align: left; margin-top: 1rem; list-style: none;">
+                        <li><i class="fas fa-check" style="color: var(--success-color);"></i> Building Design</li>
+                        <li><i class="fas fa-check" style="color: var(--success-color);"></i> 3D Modeling & Rendering</li>
+                        <li><i class="fas fa-check" style="color: var(--success-color);"></i> Interior Design</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-calculator service-icon"></i>
+                    <h3>Estimates</h3>
+                    <p>Accurate quantity surveying and cost estimation for construction projects.</p>
+                    <ul style="text-align: left; margin-top: 1rem; list-style: none;">
+                        <li><i class="fas fa-check" style="color: var(--success-color);"></i> BOQ Preparation</li>
+                        <li><i class="fas fa-check" style="color: var(--success-color);"></i> Cost Analysis</li>
+                        <li><i class="fas fa-check" style="color: var(--success-color);"></i> Tender Documentation</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-map-marked-alt service-icon"></i>
+                    <h3>Surveying</h3>
+                    <p>Precise land surveying, topographic mapping, and GIS solutions for accurate planning.</p>
+                    <ul style="text-align: left; margin-top: 1rem; list-style: none;">
+                        <li><i class="fas fa-check" style="color: var(--success-color);"></i> Land Surveying</li>
+                        <li><i class="fas fa-check" style="color: var(--success-color);"></i> GPS Mapping</li>
+                        <li><i class="fas fa-check" style="color: var(--success-color);"></i> Site Layout</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-tree service-icon"></i>
+                    <h3>Landscape Designing</h3>
+                    <p>Beautiful and functional landscape design for residential and commercial properties.</p>
+                    <ul style="text-align: left; margin-top: 1rem; list-style: none;">
+                        <li><i class="fas fa-check" style="color: var(--success-color);"></i> Garden Design</li>
+                        <li><i class="fas fa-check" style="color: var(--success-color);"></i> Hardscape Planning</li>
+                        <li><i class="fas fa-check" style="color: var(--success-color);"></i> Irrigation Systems</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-hard-hat service-icon"></i>
+                    <h3>Construction & Supervision</h3>
+                    <p>End-to-end project management from planning to completion with quality assurance.</p>
+                    <ul style="text-align: left; margin-top: 1rem; list-style: none;">
+                        <li><i class="fas fa-check" style="color: var(--success-color);"></i> Project Management</li>
+                        <li><i class="fas fa-check" style="color: var(--success-color);"></i> Quality Control</li>
+                        <li><i class="fas fa-check" style="color: var(--success-color);"></i> Site Supervision</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-tint service-icon"></i>
+                    <h3>Water Services</h3>
+                    <p>Complete water supply, drainage, and sewage system design and implementation.</p>
+                    <ul style="text-align: left; margin-top: 1rem; list-style: none;">
+                        <li><i class="fas fa-check" style="color: var(--success-color);"></i> Water Supply Design</li>
+                        <li><i class="fas fa-check" style="color: var(--success-color);"></i> Drainage Systems</li>
+                        <li><i class="fas fa-check" style="color: var(--success-color);"></i> Sewage Treatment</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-drafting-compass service-icon"></i>
+                    <h3>Structural Designing</h3>
+                    <p>Complete structural analysis and design for all types of buildings and structures.</p>
+                    <ul style="text-align: left; margin-top: 1rem; list-style: none;">
+                        <li><i class="fas fa-check" style="color: var(--success-color);"></i> RCC & Steel Structures</li>
+                        <li><i class="fas fa-check" style="color: var(--success-color);"></i> Earthquake Resistant Design</li>
+                        <li><i class="fas fa-check" style="color: var(--success-color);"></i> Foundation Design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CALCULATORS SECTION ========== -->
+    <section class="calculators" id="calculators">
+        <div class="container">
+            <h2 class="section-title">Advanced Engineering Calculators</h2>
+            <p class="section-subtitle">Accurate material calculations for your construction projects</p>
+            
+            <div class="calculator-tabs">
+                <button class="tab-btn active" data-calc="cement">Cement Calculator</button>
+                <button class="tab-btn" data-calc="steel">Steel Calculator</button>
+                <button class="tab-btn" data-calc="bricks">Bricks Calculator</button>
+                <button class="tab-btn" data-calc="cost">Cost Estimator</button>
+            </div>
+            
+            <div class="calculator-grid">
+                <!-- Cement Calculator -->
+                <div class="calculator-card" id="cement-calculator">
+                    <div class="calculator-header">
+                        <i class="fas fa-cubes calculator-icon"></i>
+                        <h3>Cement Calculation</h3>
+                    </div>
+                    <div class="input-group">
+                        <label for="cement-length">Length (ft)</label>
+                        <input type="number" id="cement-length" placeholder="Enter length" min="0" step="0.01">
+                    </div>
+                    <div class="input-group">
+                        <label for="cement-width">Width (ft)</label>
+                        <input type="number" id="cement-width" placeholder="Enter width" min="0" step="0.01">
+                    </div>
+                    <div class="input-group">
+                        <label for="cement-thickness">Thickness (inches)</label>
+                        <input type="number" id="cement-thickness" placeholder="Enter thickness" min="0" step="0.1">
+                    </div>
+                    <div class="input-group">
+                        <label for="cement-grade">Concrete Grade</label>
+                        <select id="cement-grade">
+                            <option value="3000">M15 (1:2:4)</option>
+                            <option value="4000">M20 (1:1.5:3)</option>
+                            <option value="5000">M25 (1:1:2)</option>
+                            <option value="6000">M30 (Design Mix)</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary w-full" onclick="calculateCement()">
+                        <i class="fas fa-calculator"></i> Calculate Cement Requirements
+                    </button>
+                    <div class="result-box" id="cement-result"></div>
+                </div>
+                
+                <!-- Steel Calculator -->
+                <div class="calculator-card" id="steel-calculator" style="display: none;">
+                    <div class="calculator-header">
+                        <i class="fas fa-link calculator-icon"></i>
+                        <h3>Steel Reinforcement</h3>
+                    </div>
+                    <div class="input-group">
+                        <label for="steel-area">Concrete Area (sq ft)</label>
+                        <input type="number" id="steel-area" placeholder="Enter area" min="0" step="0.01">
+                    </div>
+                    <div class="input-group">
+                        <label for="steel-type">Structural Element</label>
+                        <select id="steel-type">
+                            <option value="1">Slab (1% steel)</option>
+                            <option value="1.5">Beam (1.5% steel)</option>
+                            <option value="2">Column (2% steel)</option>
+                            <option value="0.5">Foundation (0.5% steel)</option>
+                            <option value="3">Retaining Wall (3% steel)</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="steel-diameter">Bar Diameter (mm)</label>
+                        <select id="steel-diameter">
+                            <option value="10">10mm</option>
+                            <option value="12">12mm</option>
+                            <option value="16">16mm</option>
+                            <option value="20">20mm</option>
+                            <option value="25">25mm</option>
+                            <option value="32">32mm</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="steel-spacing">Bar Spacing (inches)</label>
+                        <input type="number" id="steel-spacing" value="6" min="4" max="12" step="0.5">
+                    </div>
+                    <button class="btn btn-primary w-full" onclick="calculateSteel()">
+                        <i class="fas fa-calculator"></i> Calculate Steel Requirements
+                    </button>
+                    <div class="result-box" id="steel-result"></div>
+                </div>
+                
+                <!-- Bricks Calculator -->
+                <div class="calculator-card" id="bricks-calculator" style="display: none;">
+                    <div class="calculator-header">
+                        <i class="fas fa-th calculator-icon"></i>
+                        <h3>Bricks Estimation</h3>
+                    </div>
+                    <div class="input-group">
+                        <label for="wall-length">Wall Length (ft)</label>
+                        <input type="number" id="wall-length" placeholder="Enter length" min="0" step="0.01">
+                    </div>
+                    <div class="input-group">
+                        <label for="wall-height">Wall Height (ft)</label>
+                        <input type="number" id="wall-height" placeholder="Enter height" min="0" step="0.01">
+                    </div>
+                    <div class="input-group">
+                        <label for="wall-thickness">Wall Thickness</label>
+                        <select id="wall-thickness">
+                            <option value="4.5">4.5 inches (Half brick)</option>
+                            <option value="9">9 inches (Full brick)</option>
+                            <option value="13.5">13.5 inches (1.5 brick)</option>
+                            <option value="18">18 inches (2 brick)</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="brick-size">Brick Size</label>
+                        <select id="brick-size">
+                            <option value="9x4.5x3">Standard (9"×4.5"×3")</option>
+                            <option value="10x5x3.5">Modular (10"×5"×3.5")</option>
+                            <option value="8x4x2.5">Engineered (8"×4"×2.5")</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary w-full" onclick="calculateBricks()">
+                        <i class="fas fa-calculator"></i> Calculate Bricks Required
+                    </button>
+                    <div class="result-box" id="bricks-result"></div>
+                </div>
+                
+                <!-- Cost Estimator -->
+                <div class="calculator-card" id="cost-calculator" style="display: none;">
+                    <div class="calculator-header">
+                        <i class="fas fa-calculator calculator-icon"></i>
+                        <h3>Cost Estimation</h3>
+                    </div>
+                    <div class="input-group">
+                        <label for="project-type">Project Type</label>
+                        <select id="project-type">
+                            <option value="residential">Residential Building</option>
+                            <option value="commercial">Commercial Building</option>
+                            <option value="industrial">Industrial Project</option>
+                            <option value="infrastructure">Infrastructure</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="project-area">Built-up Area (sq ft)</label>
+                        <input type="number" id="project-area" placeholder="Enter area" min="0" step="1">
+                    </div>
+                    <div class="input-group">
+                        <label for="project-quality">Construction Quality</label>
+                        <select id="project-quality">
+                            <option value="economy">Economy (PKR 2,500/sq ft)</option>
+                            <option value="standard">Standard (PKR 3,500/sq ft)</option>
+                            <option value="premium">Premium (PKR 5,000/sq ft)</option>
+                            <option value="luxury">Luxury (PKR 7,500/sq ft)</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="project-floors">Number of Floors</label>
+                        <input type="number" id="project-floors" value="1" min="1" max="50" step="1">
+                    </div>
+                    <button class="btn btn-primary w-full" onclick="calculateCost()">
+                        <i class="fas fa-calculator"></i> Estimate Project Cost
+                    </button>
+                    <div class="result-box" id="cost-result"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Our Engineering Projects</h2>
+            <p class="section-subtitle">Latest construction projects and engineering solutions</p>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1513584684374-8bab748fbf90?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Swat Valley Resort" loading="lazy">
+                        <span class="project-status">Completed</span>
+                    </div>
+                    <div style="padding: 1.5rem;">
+                        <h3>Swat Valley Resort</h3>
+                        <p style="color: var(--gray-600); margin-bottom: 1rem;">Luxury resort with earthquake-resistant design</p>
+                        <div style="background: var(--gray-200); height: 8px; border-radius: 4px; overflow: hidden; margin-bottom: 1rem;">
+                            <div style="background: var(--success-color); width: 100%; height: 100%;"></div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; color: var(--gray-600); font-size: 0.875rem;">
+                            <span>Progress: 100%</span>
+                            <span>Cost: PKR 500M</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Commercial Complex" loading="lazy">
+                        <span class="project-status">In Progress</span>
+                    </div>
+                    <div style="padding: 1.5rem;">
+                        <h3>Mingora Commercial Complex</h3>
+                        <p style="color: var(--gray-600); margin-bottom: 1rem;">G+4 commercial building with basement parking</p>
+                        <div style="background: var(--gray-200); height: 8px; border-radius: 4px; overflow: hidden; margin-bottom: 1rem;">
+                            <div style="background: var(--primary-color); width: 75%; height: 100%;"></div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; color: var(--gray-600); font-size: 0.875rem;">
+                            <span>Progress: 75%</span>
+                            <span>Cost: PKR 300M</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Hospital Extension" loading="lazy">
+                        <span class="project-status">Completed</span>
+                    </div>
+                    <div style="padding: 1.5rem;">
+                        <h3>Peshawar Hospital Extension</h3>
+                        <p style="color: var(--gray-600); margin-bottom: 1rem;">Modern hospital extension with advanced facilities</p>
+                        <div style="background: var(--gray-200); height: 8px; border-radius: 4px; overflow: hidden; margin-bottom: 1rem;">
+                            <div style="background: var(--success-color); width: 100%; height: 100%;"></div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; color: var(--gray-600); font-size: 0.875rem;">
+                            <span>Progress: 100%</span>
+                            <span>Cost: PKR 750M</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.8);">Get in touch for professional engineering consultation</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        <div>
+                            <h3>Office Address</h3>
+                            <p>Mula BaBa Ground Floor, Puran Engineering Students Hostel<br>
+                            Mingora Bypass Road, Near Zaman Sons Shopping Centre<br>
+                            Mingora, Swat, Khyber Pakhtunkhwa<br>
+                            Pakistan</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt contact-icon"></i>
+                        <div>
+                            <h3>Contact Numbers</h3>
+                            <p><strong>Direct WhatsApp:</strong> +92 344 9752025<br>
+                            <strong>Alternate Number:</strong> +92 345 6094759<br>
+                            <strong>Office Line:</strong> +92 946 712345<br>
+                            <strong>Emergency:</strong> +92 300 1234567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <div>
+                            <h3>Email Addresses</h3>
+                            <p><strong>General Inquiries:</strong> info@hussainengineering.com<br>
+                            <strong>Projects:</strong> projects@hussainengineering.com<br>
+                            <strong>Technical Support:</strong> technical@hussainengineering.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-clock contact-icon"></i>
+                        <div>
+                            <h3>Office Hours</h3>
+                            <p><strong>Monday - Saturday:</strong> 9:00 AM - 6:00 PM<br>
+                            <strong>Friday:</strong> 9:00 AM - 1:00 PM<br>
+                            <strong>Emergency Services:</strong> 24/7 Available</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-certificate contact-icon"></i>
+                        <div>
+                            <h3>Certifications</h3>
+                            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem;">
+                                <span style="background: rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem;">PEC Registered</span>
+                                <span style="background: rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem;">ISO 9001:2015</span>
+                                <span style="background: rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem;">ACI Member</span>
+                                <span style="background: rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem;">UET Alumni</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div id="map" style="background: var(--gray-200); border-radius: var(--border-radius-lg); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">
+                        <div style="text-align: center;">
+                            <i class="fas fa-map-marker-alt" style="font-size: 3rem; color: var(--accent-color); margin-bottom: 1rem;"></i>
+                            <h3>Office Location</h3>
+                            <p>Mula BaBa Ground Floor<br>Puran Engineering Students Hostel<br>Mingora Bypass Road</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info mt-3">
+                        <h3 style="margin-bottom: 1.5rem;">Quick Contact Form</h3>
+                        <form id="contact-form">
+                            <div class="input-group">
+                                <input type="text" placeholder="Your Name" required style="background: rgba(255,255,255,0.9);">
+                            </div>
+                            <div class="input-group">
+                                <input type="email" placeholder="Email Address" required style="background: rgba(255,255,255,0.9);">
+                            </div>
+                            <div class="input-group">
+                                <input type="tel" placeholder="Phone Number" required style="background: rgba(255,255,255,0.9);">
+                            </div>
+                            <div class="input-group">
+                                <select required style="background: rgba(255,255,255,0.9);">
+                                    <option value="">Select Service</option>
+                                    <option value="planning">Planning</option>
+                                    <option value="architecture">Architecture Designing</option>
+                                    <option value="estimates">Estimates</option>
+                                    <option value="surveying">Surveying</option>
+                                    <option value="landscape">Landscape Designing</option>
+                                    <option value="construction">Construction & Supervision</option>
+                                    <option value="water">Water Services</option>
+                                    <option value="structural">Structural Designing</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <textarea placeholder="Project Details" rows="4" required style="background: rgba(255,255,255,0.9); width: 100%; padding: 0.75rem 1rem; border: none; border-radius: var(--border-radius); font-family: inherit;"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-full">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Hussain Engineering Consultants</h3>
+                    <p>Providing professional civil engineering services since 2008. Registered with Pakistan Engineering Council (PEC).</p>
+                    <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                        <a href="#" style="color: white;" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="color: white;" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="color: white;" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://wa.me/923449752025" style="color: #25D366;" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 0.5rem;"><a href="#home" style="color: var(--gray-500);">Home</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#team" style="color: var(--gray-500);">Our Team</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#services" style="color: var(--gray-500);">Services</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#calculators" style="color: var(--gray-500);">Calculators</a></li>
+                        <li><a href="#contact" style="color: var(--gray-500);">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Download Center</h3>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 0.5rem;">
+                            <a href="#" style="color: var(--gray-500);">
+                                <i class="fas fa-file-pdf"></i> BOQ Templates
+                            </a>
+                        </li>
+                        <li style="margin-bottom: 0.5rem;">
+                            <a href="#" style="color: var(--gray-500);">
+                                <i class="fas fa-file-contract"></i> Service Agreement
+                            </a>
+                        </li>
+                        <li style="margin-bottom: 0.5rem;">
+                            <a href="#" style="color: var(--gray-500);">
+                                <i class="fas fa-file-alt"></i> PEC Code of Ethics
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" style="color: var(--gray-500);">
+                                <i class="fas fa-calculator"></i> Complete Calculator Sheet
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Standards Compliance</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                        <span style="background: rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem;">ACI Codes</span>
+                        <span style="background: rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem;">ASTM Standards</span>
+                        <span style="background: rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem;">BS Codes</span>
+                        <span style="background: rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem;">UBC</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 Hussain Engineering Consultants. All rights reserved.</p>
+                <p style="margin-top: 0.5rem;">
+                    <i class="fas fa-phone"></i> +92 344 9752025, +92 345 6094759 | 
+                    <i class="fas fa-map-marker-alt"></i> Mula BaBa Ground Floor, Puran Engineering Students Hostel, Mingora
+                </p>
+                <p style="margin-top: 0.5rem; font-size: 0.875rem;">
+                    Managing Director: Engr. Hayat Hussain (MS Civil UET Peshawar) | 
+                    Assistant Director: Engr. Zia Ur Rahman | 
+                    Architect: Asim Khan
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== JAVASCRIPT ========== -->
+    <script>
+        // ========== THEME MANAGEMENT ==========
+        class ThemeManager {
+            constructor() {
+                this.theme = localStorage.getItem('theme') || 'light';
+                this.init();
+            }
+            
+            init() {
+                document.body.setAttribute('data-theme', this.theme);
+                this.updateThemeIcon();
+                this.bindEvents();
+            }
+            
+            toggle() {
+                this.theme = this.theme === 'light' ? 'dark' : 'light';
+                document.body.setAttribute('data-theme', this.theme);
+                localStorage.setItem('theme', this.theme);
+                this.updateThemeIcon();
+                this.showNotification(`Switched to ${this.theme} mode`);
+            }
+            
+            updateThemeIcon() {
+                const icon = document.querySelector('#theme-toggle i');
+                if (icon) {
+                    icon.className = this.theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+                }
+            }
+            
+            bindEvents() {
+                const themeToggle = document.getElementById('theme-toggle');
+                if (themeToggle) {
+                    themeToggle.addEventListener('click', () => this.toggle());
+                }
+                
+                // System theme preference
+                const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+                mediaQuery.addEventListener('change', (e) => {
+                    if (!localStorage.getItem('theme')) {
+                        this.theme = e.matches ? 'dark' : 'light';
+                        document.body.setAttribute('data-theme', this.theme);
+                        this.updateThemeIcon();
+                    }
+                });
+            }
+            
+            showNotification(message) {
+                const notification = document.createElement('div');
+                notification.textContent = message;
+                notification.style.cssText = `
+                    position: fixed;
+                    top: 100px;
+                    right: 20px;
+                    background: var(--primary-color);
+                    color: white;
+                    padding: 1rem 1.5rem;
+                    border-radius: var(--border-radius);
+                    box-shadow: var(--shadow-lg);
+                    z-index: 9999;
+                    animation: slideIn 0.3s ease;
+                `;
+                document.body.appendChild(notification);
+                
+                setTimeout(() => {
+                    notification.style.animation = 'slideIn 0.3s ease reverse';
+                    setTimeout(() => notification.remove(), 300);
+                }, 2000);
+            }
+        }
+
+        // ========== NAVIGATION ==========
+        class Navigation {
+            constructor() {
+                this.mobileToggle = document.getElementById('mobile-toggle');
+                this.navLinks = document.querySelector('.nav-links');
+                this.init();
+            }
+            
+            init() {
+                this.bindEvents();
+                this.setupSmoothScrolling();
+                this.updateActiveNav();
+                this.hideNavOnScroll();
+            }
+            
+            bindEvents() {
+                if (this.mobileToggle) {
+                    this.mobileToggle.addEventListener('click', () => {
+                        this.navLinks.classList.toggle('active');
+                        this.mobileToggle.querySelector('i').className = 
+                            this.navLinks.classList.contains('active') ? 'fas fa-times' : 'fas fa-bars';
+                    });
+                }
+                
+                // Close mobile menu when clicking a link
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.addEventListener('click', () => {
+                        this.navLinks.classList.remove('active');
+                        if (this.mobileToggle) {
+                            this.mobileToggle.querySelector('i').className = 'fas fa-bars';
+                        }
+                    });
+                });
+                
+                // Close mobile menu when clicking outside
+                document.addEventListener('click', (e) => {
+                    if (!this.navLinks.contains(e.target) && !this.mobileToggle.contains(e.target)) {
+                        this.navLinks.classList.remove('active');
+                        if (this.mobileToggle) {
+                            this.mobileToggle.querySelector('i').className = 'fas fa-bars';
+                        }
+                    }
+                });
+            }
+            
+            setupSmoothScrolling() {
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const targetId = this.getAttribute('href');
+                        if (targetId === '#') return;
+                        
+                        const targetElement = document.querySelector(targetId);
+                        if (targetElement) {
+                            window.scrollTo({
+                                top: targetElement.offsetTop - 80,
+                                behavior: 'smooth'
+                            });
+                        }
+                    });
+                });
+            }
+            
+            updateActiveNav() {
+                const sections = document.querySelectorAll('section');
+                const navLinks = document.querySelectorAll('.nav-link');
+                
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const id = entry.target.getAttribute('id');
+                            navLinks.forEach(link => {
+                                link.classList.remove('active');
+                                if (link.getAttribute('href') === `#${id}`) {
+                                    link.classList.add('active');
+                                }
+                            });
+                        }
+                    });
+                }, { threshold: 0.5 });
+                
+                sections.forEach(section => observer.observe(section));
+            }
+            
+            hideNavOnScroll() {
+                let lastScrollTop = 0;
+                const navbar = document.querySelector('.navbar');
+                
+                window.addEventListener('scroll', () => {
+                    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                    
+                    if (scrollTop > lastScrollTop && scrollTop > 100) {
+                        // Scroll down
+                        navbar.style.transform = 'translateY(-100%)';
+                    } else {
+                        // Scroll up
+                        navbar.style.transform = 'translateY(0)';
+                    }
+                    
+                    lastScrollTop = scrollTop;
+                });
+            }
+        }
+
+        // ========== CALCULATORS ==========
+        class EngineeringCalculators {
+            constructor() {
+                this.init();
+                this.calculationHistory = [];
+            }
+            
+            init() {
+                this.setupCalculatorTabs();
+                this.bindCalculatorEvents();
+                this.loadCalculationHistory();
+            }
+            
+            setupCalculatorTabs() {
+                const tabButtons = document.querySelectorAll('.tab-btn');
+                const calculators = document.querySelectorAll('.calculator-card');
+                
+                tabButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        const calcType = button.getAttribute('data-calc');
+                        
+                        // Update active tab
+                        tabButtons.forEach(btn => btn.classList.remove('active'));
+                        button.classList.add('active');
+                        
+                        // Show corresponding calculator
+                        calculators.forEach(calc => {
+                            calc.style.display = 'none';
+                        });
+                        document.getElementById(`${calcType}-calculator`).style.display = 'block';
+                        
+                        // Store last used calculator
+                        localStorage.setItem('lastCalculator', calcType);
+                    });
+                });
+                
+                // Load last used calculator
+                const lastCalculator = localStorage.getItem('lastCalculator') || 'cement';
+                document.querySelector(`[data-calc="${lastCalculator}"]`).click();
+            }
+            
+            bindCalculatorEvents() {
+                // Contact form submission
+                const contactForm = document.getElementById('contact-form');
+                if (contactForm) {
+                    contactForm.addEventListener('submit', (e) => {
+                        e.preventDefault();
+                        const formData = new FormData(contactForm);
+                        const data = Object.fromEntries(formData.entries());
+                        
+                        // Simulate form submission
+                        const submitBtn = contactForm.querySelector('button[type="submit"]');
+                        const originalText = submitBtn.innerHTML;
+                        submitBtn.innerHTML = '<span class="loading"></span> Sending...';
+                        submitBtn.disabled = true;
+                        
+                        setTimeout(() => {
+                            submitBtn.innerHTML = originalText;
+                            submitBtn.disabled = false;
+                            
+                            // Show success message
+                            this.showNotification('Thank you for your message! We will contact you within 24 hours.', 'success');
+                            contactForm.reset();
+                            
+                            // Save to local storage
+                            this.saveContact(data);
+                        }, 1500);
+                    });
+                }
+                
+                // Auto-calculate on input change
+                document.querySelectorAll('.calculator-card input, .calculator-card select').forEach(element => {
+                    element.addEventListener('input', () => {
+                        // Clear results when inputs change
+                        const calculator = element.closest('.calculator-card');
+                        const resultBox = calculator.querySelector('.result-box');
+                        if (resultBox) {
+                            resultBox.classList.remove('show');
+                        }
+                    });
+                });
+            }
+            
+            // Cement Calculation
+            calculateCement() {
+                const length = parseFloat(document.getElementById('cement-length').value) || 0;
+                const width = parseFloat(document.getElementById('cement-width').value) || 0;
+                const thickness = parseFloat(document.getElementById('cement-thickness').value) || 0;
+                const grade = document.getElementById('cement-grade').value;
+                
+                if (length && width && thickness) {
+                    // Convert inches to feet for thickness
+                    const thicknessFt = thickness / 12;
+                    
+                    // Calculate volume in cubic feet
+                    const volumeCuFt = length * width * thicknessFt;
+                    
+                    // Convert to cubic yards (1 cu yd = 27 cu ft)
+                    const volumeCuYd = volumeCuFt / 27;
+                    
+                    // Calculate cement bags (1 cu yd requires approximately 6 bags for standard mix)
+                    let cementBags;
+                    switch(parseInt(grade)) {
+                        case 3000: cementBags = Math.ceil(volumeCuYd * 6); break; // M15
+                        case 4000: cementBags = Math.ceil(volumeCuYd * 6.5); break; // M20
+                        case 5000: cementBags = Math.ceil(volumeCuYd * 7); break; // M25
+                        case 6000: cementBags = Math.ceil(volumeCuYd * 7.5); break; // M30
+                        default: cementBags = Math.ceil(volumeCuYd * 6);
+                    }
+                    
+                    // Calculate sand and aggregate
+                    const sandCuYd = (volumeCuYd * 0.5).toFixed(2);
+                    const aggregateCuYd = (volumeCuYd * 0.75).toFixed(2);
+                    
+                    // Calculate cost (assuming PKR 1100 per bag)
+                    const cementCost = (cementBags * 1100).toLocaleString();
+                    const sandCost = (parseFloat(sandCuYd) * 3000).toLocaleString();
+                    const aggregateCost = (parseFloat(aggregateCuYd) * 4000).toLocaleString();
+                    const totalCost = (cementBags * 1100 + parseFloat(sandCuYd) * 3000 + parseFloat(aggregateCuYd) * 4000).toLocaleString();
+                    
+                    const resultBox = document.getElementById('cement-result');
+                    resultBox.innerHTML = `
+                        <h4 style="margin-bottom: 1rem; color: var(--accent-color);">Concrete Calculation Results</h4>
+                        <div class="result-item">
+                            <span>Volume:</span>
+                            <span>${volumeCuFt.toFixed(2)} cu ft (${volumeCuYd.toFixed(2)} cu yd)</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Concrete Grade:</span>
+                            <span>M${parseInt(grade)/200}</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Cement Bags (50kg):</span>
+                            <span style="color: var(--accent-color); font-weight: 600;">${cementBags}</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Sand Required:</span>
+                            <span>${sandCuYd} cu yd</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Aggregate Required:</span>
+                            <span>${aggregateCuYd} cu yd</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Cement Cost:</span>
+                            <span>PKR ${cementCost}</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Sand Cost:</span>
+                            <span>PKR ${sandCost}</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Aggregate Cost:</span>
+                            <span>PKR ${aggregateCost}</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Total Estimated Cost:</span>
+                            <span style="color: var(--success-color); font-weight: 600;">PKR ${totalCost}</span>
+                        </div>
+                        <button onclick="engineeringApp.calculators.saveCalculation('cement', {volume: ${volumeCuYd}, cementBags: ${cementBags}, totalCost: ${totalCost}})" class="btn btn-outline w-full mt-2" style="color: white; border-color: white;">
+                            <i class="fas fa-save"></i> Save Calculation
+                        </button>
+                    `;
+                    resultBox.classList.add('show');
+                    
+                    // Save to history
+                    this.saveCalculation('cement', {
+                        length, width, thickness, grade,
+                        volume: volumeCuYd,
+                        cementBags,
+                        totalCost
+                    });
+                } else {
+                    this.showNotification('Please fill in all fields', 'error');
+                }
+            }
+            
+            // Steel Calculation
+            calculateSteel() {
+                const area = parseFloat(document.getElementById('steel-area').value) || 0;
+                const steelType = parseFloat(document.getElementById('steel-type').value) || 0;
+                const diameter = parseFloat(document.getElementById('steel-diameter').value) || 0;
+                const spacing = parseFloat(document.getElementById('steel-spacing').value) || 0;
+                
+                if (area) {
+                    // Convert percentage to decimal
+                    const steelPercentage = steelType / 100;
+                    
+                    // Calculate steel volume (cubic feet)
+                    const steelVolumeCuFt = area * steelPercentage;
+                    
+                    // Convert to weight (490 lbs per cubic foot for steel)
+                    const steelWeightLbs = steelVolumeCuFt * 490;
+                    
+                    // Convert to kilograms
+                    const steelWeightKg = steelWeightLbs * 0.453592;
+                    
+                    // Calculate number of bars
+                    const barArea = Math.PI * Math.pow(diameter/2, 2) / 100; // in cm²
+                    const spacingMeters = spacing * 0.0254; // inches to meters
+                    const barsPerMeter = 1 / spacingMeters;
+                    const totalBars = Math.ceil(barsPerMeter * Math.sqrt(area) * 2); // Approximation
+                    
+                    // Calculate cost (PKR 250 per kg)
+                    const steelCost = (steelWeightKg * 250).toLocaleString();
+                    
+                    const resultBox = document.getElementById('steel-result');
+                    resultBox.innerHTML = `
+                        <h4 style="margin-bottom: 1rem; color: var(--accent-color);">Steel Calculation Results</h4>
+                        <div class="result-item">
+                            <span>Steel Weight:</span>
+                            <span>${steelWeightKg.toFixed(2)} kg (${steelWeightLbs.toFixed(2)} lbs)</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Steel Percentage:</span>
+                            <span>${steelType}%</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Bar Diameter:</span>
+                            <span>${diameter} mm</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Bar Spacing:</span>
+                            <span>${spacing} inches</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Number of Bars:</span>
+                            <span>${totalBars}</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Bar Cross-sectional Area:</span>
+                            <span>${barArea.toFixed(2)} cm²</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Estimated Cost:</span>
+                            <span style="color: var(--success-color); font-weight: 600;">PKR ${steelCost}</span>
+                        </div>
+                        <button onclick="engineeringApp.calculators.saveCalculation('steel', {weight: ${steelWeightKg}, cost: ${steelCost}})" class="btn btn-outline w-full mt-2" style="color: white; border-color: white;">
+                            <i class="fas fa-save"></i> Save Calculation
+                        </button>
+                    `;
+                    resultBox.classList.add('show');
+                    
+                    // Save to history
+                    this.saveCalculation('steel', {
+                        area, steelType, diameter, spacing,
+                        steelWeightKg,
+                        steelCost
+                    });
+                } else {
+                    this.showNotification('Please fill in all fields', 'error');
+                }
+            }
+            
+            // Bricks Calculation
+            calculateBricks() {
+                const length = parseFloat(document.getElementById('wall-length').value) || 0;
+                const height = parseFloat(document.getElementById('wall-height').value) || 0;
+                const thickness = parseFloat(document.getElementById('wall-thickness').value) || 0;
+                const brickSize = document.getElementById('brick-size').value;
+                
+                if (length && height && thickness) {
+                    // Convert dimensions to inches
+                    const lengthIn = length * 12;
+                    const heightIn = height * 12;
+                    
+                    // Parse brick size
+                    const brickDims = brickSize.split('x').map(dim => parseFloat(dim));
+                    const [brickLength, brickWidth, brickHeight] = brickDims;
+                    
+                    // Add mortar thickness (assume 10mm = 0.4 inches)
+                    const mortarThickness = 0.4;
+                    const brickLengthWithMortar = brickLength + mortarThickness;
+                    const brickHeightWithMortar = brickHeight + mortarThickness;
+                    
+                    // Calculate number of bricks
+                    const bricksPerSqFt = (144 / (brickLengthWithMortar * brickHeightWithMortar));
+                    const wallAreaSqFt = (length * height) * 2; // Both sides
+                    const totalBricks = Math.ceil(bricksPerSqFt * wallAreaSqFt * (thickness / brickWidth));
+                    
+                    // Calculate mortar
+                    const mortarVolume = (totalBricks * mortarThickness * brickLength * brickHeight) / 1728; // cu ft
+                    const cementBags = Math.ceil(mortarVolume * 6);
+                    const sandCuFt = (mortarVolume * 4).toFixed(2);
+                    
+                    // Calculate costs
+                    const brickCost = (totalBricks * 18).toLocaleString();
+                    const mortarCost = (cementBags * 1100 + parseFloat(sandCuFt) * 50).toLocaleString();
+                    const totalCost = (totalBricks * 18 + cementBags * 1100 + parseFloat(sandCuFt) * 50).toLocaleString();
+                    
+                    const resultBox = document.getElementById('bricks-result');
+                    resultBox.innerHTML = `
+                        <h4 style="margin-bottom: 1rem; color: var(--accent-color);">Bricks Calculation Results</h4>
+                        <div class="result-item">
+                            <span>Total Bricks Required:</span>
+                            <span style="color: var(--accent-color); font-weight: 600;">${totalBricks.toLocaleString()}</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Bricks per Sq Ft:</span>
+                            <span>${bricksPerSqFt.toFixed(2)}</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Wall Thickness:</span>
+                            <span>${thickness} inches</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Brick Size:</span>
+                            <span>${brickLength}" × ${brickWidth}" × ${brickHeight}"</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Cement for Mortar:</span>
+                            <span>${cementBags} bags</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Sand for Mortar:</span>
+                            <span>${sandCuFt} cu ft</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Bricks Cost:</span>
+                            <span>PKR ${brickCost}</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Mortar Cost:</span>
+                            <span>PKR ${mortarCost}</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Total Estimated Cost:</span>
+                            <span style="color: var(--success-color); font-weight: 600;">PKR ${totalCost}</span>
+                        </div>
+                        <button onclick="engineeringApp.calculators.saveCalculation('bricks', {totalBricks: ${totalBricks}, totalCost: ${totalCost}})" class="btn btn-outline w-full mt-2" style="color: white; border-color: white;">
+                            <i class="fas fa-save"></i> Save Calculation
+                        </button>
+                    `;
+                    resultBox.classList.add('show');
+                    
+                    // Save to history
+                    this.saveCalculation('bricks', {
+                        length, height, thickness, brickSize,
+                        totalBricks,
+                        totalCost
+                    });
+                } else {
+                    this.showNotification('Please fill in all fields', 'error');
+                }
+            }
+            
+            // Cost Estimation
+            calculateCost() {
+                const projectType = document.getElementById('project-type').value;
+                const area = parseFloat(document.getElementById('project-area').value) || 0;
+                const quality = document.getElementById('project-quality').value;
+                const floors = parseFloat(document.getElementById('project-floors').value) || 1;
+                
+                if (area) {
+                    // Base rates per sq ft
+                    const rates = {
+                        economy: 2500,
+                        standard: 3500,
+                        premium: 5000,
+                        luxury: 7500
+                    };
+                    
+                    // Multipliers for project type
+                    const multipliers = {
+                        residential: 1.0,
+                        commercial: 1.3,
+                        industrial: 1.5,
+                        infrastructure: 1.2
+                    };
+                    
+                    const baseRate = rates[quality] || 3500;
+                    const multiplier = multipliers[projectType] || 1.0;
+                    const ratePerSqFt = baseRate * multiplier;
+                    
+                    const totalArea = area * floors;
+                    const totalCost = totalArea * ratePerSqFt;
+                    
+                    // Break down costs
+                    const structureCost = totalCost * 0.35;
+                    const finishingCost = totalCost * 0.30;
+                    const servicesCost = totalCost * 0.20;
+                    const otherCost = totalCost * 0.15;
+                    
+                    const resultBox = document.getElementById('cost-result');
+                    resultBox.innerHTML = `
+                        <h4 style="margin-bottom: 1rem; color: var(--accent-color);">Cost Estimation Results</h4>
+                        <div class="result-item">
+                            <span>Rate per Sq Ft:</span>
+                            <span>PKR ${ratePerSqFt.toLocaleString()}</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Total Area:</span>
+                            <span>${totalArea.toLocaleString()} sq ft</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Construction Quality:</span>
+                            <span>${quality.charAt(0).toUpperCase() + quality.slice(1)}</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Project Type:</span>
+                            <span>${projectType.charAt(0).toUpperCase() + projectType.slice(1)}</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Structure Cost (35%):</span>
+                            <span>PKR ${structureCost.toLocaleString()}</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Finishing Cost (30%):</span>
+                            <span>PKR ${finishingCost.toLocaleString()}</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Services Cost (20%):</span>
+                            <span>PKR ${servicesCost.toLocaleString()}</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Other Costs (15%):</span>
+                            <span>PKR ${otherCost.toLocaleString()}</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Total Estimated Cost:</span>
+                            <span style="color: var(--success-color); font-weight: 600;">PKR ${totalCost.toLocaleString()}</span>
+                        </div>
+                        <button onclick="engineeringApp.calculators.saveCalculation('cost', {totalCost: ${totalCost}, projectType: '${projectType}'})" class="btn btn-outline w-full mt-2" style="color: white; border-color: white;">
+                            <i class="fas fa-save"></i> Save Calculation
+                        </button>
+                    `;
+                    resultBox.classList.add('show');
+                    
+                    // Save to history
+                    this.saveCalculation('cost', {
+                        projectType, area, quality, floors,
+                        totalCost
+                    });
+                } else {
+                    this.showNotification('Please fill in all fields', 'error');
+                }
+            }
+            
+            saveCalculation(type, data) {
+                const calculation = {
+                    type,
+                    data,
+                    timestamp: new Date().toISOString(),
+                    id: Date.now()
+                };
+                
+                this.calculationHistory.push(calculation);
+                localStorage.setItem('calculationHistory', JSON.stringify(this.calculationHistory));
+                
+                this.showNotification('Calculation saved successfully!', 'success');
+            }
+            
+            saveContact(data) {
+                let contacts = JSON.parse(localStorage.getItem('contacts') || '[]');
+                contacts.push({
+                    ...data,
+                    timestamp: new Date().toISOString(),
+                    id: Date.now()
+                });
+                localStorage.setItem('contacts', JSON.stringify(contacts));
+            }
+            
+            loadCalculationHistory() {
+                const history = localStorage.getItem('calculationHistory');
+                if (history) {
+                    this.calculationHistory = JSON.parse(history);
+                }
+            }
+            
+            showNotification(message, type = 'info') {
+                const notification = document.createElement('div');
+                notification.textContent = message;
+                notification.style.cssText = `
+                    position: fixed;
+                    top: 100px;
+                    right: 20px;
+                    background: ${type === 'error' ? 'var(--danger-color)' : type === 'success' ? 'var(--success-color)' : 'var(--primary-color)'};
+                    color: white;
+                    padding: 1rem 1.5rem;
+                    border-radius: var(--border-radius);
+                    box-shadow: var(--shadow-lg);
+                    z-index: 9999;
+                    animation: slideIn 0.3s ease;
+                `;
+                document.body.appendChild(notification);
+                
+                setTimeout(() => {
+                    notification.style.animation = 'slideIn 0.3s ease reverse';
+                    setTimeout(() => notification.remove(), 300);
+                }, 3000);
+            }
+        }
+
+        // ========== ANIMATIONS ==========
+        class Animations {
+            constructor() {
+                this.init();
+            }
+            
+            init() {
+                this.animateStats();
+                this.animateOnScroll();
+                this.setupParallax();
+            }
+            
+            animateStats() {
+                const statNumbers = document.querySelectorAll('.stat-number');
+                
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            statNumbers.forEach(stat => {
+                                const target = parseInt(stat.getAttribute('data-count'));
+                                const increment = target / 100;
+                                let current = 0;
+                                
+                                const timer = setInterval(() => {
+                                    current += increment;
+                                    if (current >= target) {
+                                        stat.textContent = target + (stat.textContent.includes('+') ? '+' : '');
+                                        clearInterval(timer);
+                                    } else {
+                                        stat.textContent = Math.floor(current);
+                                    }
+                                }, 20);
+                            });
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.5 });
+                
+                observer.observe(document.querySelector('.hero-stats'));
+            }
+            
+            animateOnScroll() {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.style.opacity = '1';
+                            entry.target.style.transform = 'translateY(0)';
+                            entry.target.style.animation = 'slideIn 0.5s ease';
+                        }
+                    });
+                }, { threshold: 0.1 });
+                
+                document.querySelectorAll('.service-card, .project-card, .team-card').forEach(element => {
+                    element.style.opacity = '0';
+                    element.style.transform = 'translateY(20px)';
+                    observer.observe(element);
+                });
+            }
+            
+            setupParallax() {
+                window.addEventListener('scroll', () => {
+                    const scrolled = window.pageYOffset;
+                    const parallaxElements = document.querySelectorAll('.hero');
+                    
+                    parallaxElements.forEach(element => {
+                        const rate = scrolled * 0.5;
+                        element.style.backgroundPosition = `center ${rate}px`;
+                    });
+                });
+            }
+        }
+
+        // ========== DATABASE ==========
+        class Database {
+            constructor() {
+                this.storageKey = 'hussain_engineering_data';
+                this.init();
+            }
+            
+            init() {
+                if (!localStorage.getItem(this.storageKey)) {
+                    const initialData = {
+                        calculations: [],
+                        contacts: [],
+                        projects: [],
+                        settings: { theme: 'light', lastCalculator: 'cement' }
+                    };
+                    localStorage.setItem(this.storageKey, JSON.stringify(initialData));
+                }
+            }
+            
+            saveData(key, data) {
+                const db = JSON.parse(localStorage.getItem(this.storageKey));
+                db[key].push({
+                    ...data,
+                    timestamp: new Date().toISOString()
+                });
+                localStorage.setItem(this.storageKey, JSON.stringify(db));
+            }
+            
+            getData(key) {
+                const db = JSON.parse(localStorage.getItem(this.storageKey));
+                return db[key] || [];
+            }
+            
+            clearData(key) {
+                const db = JSON.parse(localStorage.getItem(this.storageKey));
+                db[key] = [];
+                localStorage.setItem(this.storageKey, JSON.stringify(db));
+            }
+        }
+
+        // ========== APPLICATION INITIALIZATION ==========
+        class EngineeringApp {
+            constructor() {
+                this.themeManager = new ThemeManager();
+                this.navigation = new Navigation();
+                this.calculators = new EngineeringCalculators();
+                this.animations = new Animations();
+                this.database = new Database();
+                this.init();
+            }
+            
+            init() {
+                // Bind global functions
+                window.calculateCement = () => this.calculators.calculateCement();
+                window.calculateSteel = () => this.calculators.calculateSteel();
+                window.calculateBricks = () => this.calculators.calculateBricks();
+                window.calculateCost = () => this.calculators.calculateCost();
+                
+                // Initialize components
+                this.setupEventListeners();
+                this.showWelcomeMessage();
+                this.setupPrintButton();
+            }
+            
+            setupEventListeners() {
+                // Keyboard shortcuts
+                document.addEventListener('keydown', (e) => {
+                    // Ctrl + C for calculators
+                    if (e.ctrlKey && e.key === 'c') {
+                        e.preventDefault();
+                        document.querySelector('a[href="#calculators"]').click();
+                    }
+                    
+                    // Ctrl + T for theme toggle
+                    if (e.ctrlKey && e.key === 't') {
+                        e.preventDefault();
+                        this.themeManager.toggle();
+                    }
+                    
+                    // Esc to close modals
+                    if (e.key === 'Escape') {
+                        document.querySelector('.nav-links.active')?.classList.remove('active');
+                    }
+                });
+                
+                // Load images with lazy loading
+                this.setupLazyLoading();
+            }
+            
+            setupLazyLoading() {
+                const images = document.querySelectorAll('img[loading="lazy"]');
+                const imageObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const img = entry.target;
+                            img.src = img.dataset.src;
+                            img.classList.add('loaded');
+                            observer.unobserve(img);
+                        }
+                    });
+                });
+                
+                images.forEach(img => imageObserver.observe(img));
+            }
+            
+            setupPrintButton() {
+                const printBtn = document.createElement('button');
+                printBtn.innerHTML = '<i class="fas fa-print"></i>';
+                printBtn.classList.add('btn-print');
+                printBtn.style.cssText = `
+                    position: fixed;
+                    bottom: 100px;
+                    right: 30px;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background: var(--primary-color);
+                    color: white;
+                    border: none;
+                    box-shadow: var(--shadow-lg);
+                    z-index: 998;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                `;
+                printBtn.title = 'Print Page';
+                printBtn.setAttribute('aria-label', 'Print this page');
+                printBtn.addEventListener('click', () => {
+                    window.print();
+                });
+                document.body.appendChild(printBtn);
+                
+                // Add download button for calculations
+                const downloadBtn = document.createElement('button');
+                downloadBtn.innerHTML = '<i class="fas fa-download"></i>';
+                downloadBtn.style.cssText = `
+                    position: fixed;
+                    bottom: 160px;
+                    right: 30px;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background: var(--success-color);
+                    color: white;
+                    border: none;
+                    box-shadow: var(--shadow-lg);
+                    z-index: 998;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                `;
+                downloadBtn.title = 'Download Calculations';
+                downloadBtn.setAttribute('aria-label', 'Download calculation history');
+                downloadBtn.addEventListener('click', () => {
+                    this.downloadCalculations();
+                });
+                document.body.appendChild(downloadBtn);
+            }
+            
+            downloadCalculations() {
+                const history = this.calculators.calculationHistory;
+                if (history.length === 0) {
+                    this.calculators.showNotification('No calculations to download', 'error');
+                    return;
+                }
+                
+                const dataStr = JSON.stringify(history, null, 2);
+                const dataUri = 'data:application/json;charset=utf-8,'+ encodeURIComponent(dataStr);
+                
+                const exportFileDefaultName = `Hussain-Engineering-Calculations-${new Date().toISOString().split('T')[0]}.json`;
+                
+                const linkElement = document.createElement('a');
+                linkElement.setAttribute('href', dataUri);
+                linkElement.setAttribute('download', exportFileDefaultName);
+                linkElement.click();
+                
+                this.calculators.showNotification('Calculations downloaded successfully!', 'success');
+            }
+            
+            showWelcomeMessage() {
+                setTimeout(() => {
+                    console.log('%c🚀 Hussain Engineering Consultants 🚀', 'color: #0066CC; font-size: 18px; font-weight: bold;');
+                    console.log('%c📞 Contact: +92 344 9752025, +92 345 6094759', 'color: #00A8E8;');
+                    console.log('%c📍 Address: Mula BaBa Ground Floor, Puran Engineering Students Hostel, Mingora', 'color: #FF6B35;');
+                    console.log('%c👨‍💼 Managing Director: Engr. Hayat Hussain (MS Civil UET Peshawar)', 'color: #28A745;');
+                }, 1000);
+            }
+        }
+
+        // ========== INITIALIZE APPLICATION ==========
+        document.addEventListener('DOMContentLoaded', () => {
+            // Show loading state
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.5s ease';
+            
+            // Initialize app after a small delay
+            setTimeout(() => {
+                window.engineeringApp = new EngineeringApp();
+                document.body.style.opacity = '1';
+                
+                // Add loading animation removal
+                document.querySelectorAll('img').forEach(img => {
+                    img.addEventListener('load', function() {
+                        this.classList.add('loaded');
+                    });
+                });
+            }, 100);
+        });
+
+        // ========== SERVICE WORKER REGISTRATION (PWA) ==========
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').catch(error => {
+                    console.log('Service Worker registration failed:', error);
+                });
+            });
+        }
+    </script>
+</body>
+</html>
